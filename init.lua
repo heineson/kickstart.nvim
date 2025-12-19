@@ -206,6 +206,10 @@ vim.keymap.set('n', '<A-9>', '<Cmd>BufferGoto 9<CR>', { desc = 'Move to buffer 9
 vim.keymap.set('n', '<A-0>', '<Cmd>BufferLast<CR>', { desc = 'Move to last buffer' })
 vim.keymap.set('n', '<A-c>', '<Cmd>BufferClose<CR>', { desc = 'Close buffer' })
 
+-- LivePreview keymaps
+vim.keymap.set('n', '<leader>pp', '<Cmd>LivePreview start<CR>', { desc = 'LivePreview start' })
+vim.keymap.set('n', '<leader>pc', '<Cmd>LivePreview close<CR>', { desc = 'LivePreview close' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 -- Highlight when yanking (copying) text
@@ -339,6 +343,7 @@ require('lazy').setup({
         { '<leader>t', group = '[T]oggle' },
         { '<leader>h', group = 'Git [H]unk, [H]op', mode = { 'n', 'v' } },
         { '<leader>l', group = '[L]azyGit', mode = { 'n' } },
+        { '<leader>p', group = 'Live[P]review', mode = { 'n' } },
       },
     },
   },
