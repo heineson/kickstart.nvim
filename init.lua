@@ -318,9 +318,7 @@ require('lazy').setup({
       spec = {
         { '<leader>s', group = '[S]earch', mode = { 'n', 'v' } },
         { '<leader>t', group = '[T]oggle' },
-        { '<leader>h', group = 'Git [H]unk, [H]op', mode = { 'n', 'v' } },
-        { '<leader>l', group = '[L]azyGit', mode = { 'n' } },
-        { '<leader>p', group = 'Live[P]review', mode = { 'n' } },
+        { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
         { 'gr', group = 'LSP Actions', mode = { 'n' } },
       },
     },
